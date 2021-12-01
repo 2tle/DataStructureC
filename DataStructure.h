@@ -55,7 +55,11 @@ void MakeBTLeftSubTree(BTreeNode* main, BTreeNode* sub);
 
 void MakeBTRightSubTree(BTreeNode* main, BTreeNode *sub);
 
+void preorderTraverseBT(BTreeNode* bt);
+
 void inorderTraverseBT(BTreeNode* bt);
+
+void postorderTraverseBT(BTreeNode* bt);
 
 
 

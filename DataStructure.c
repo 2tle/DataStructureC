@@ -82,7 +82,21 @@ void MakeBTRightSubTree(BTreeNode* main, BTreeNode* sub) {
 
 void inorderTraverseBT(BTreeNode* bt) {
 	if(bt==NULL) return;
-	printf("%d ",bt->data);
 	inorderTraverseBT(bt->left);
+	printf("%d ",bt->data);
 	inorderTraverseBT(bt->right);
+}
+
+void preorderTraverseBT(BTreeNode* bt) {
+	if(bt==NULL) return;
+	printf("%d ",bt->data);
+	preorderTraverseBT(bt->left);
+	preorderTraverseBT(bt->right);
+}
+
+void postorderTraverseBT(BTreeNode* bt) {
+	if(bt==NULL) return;
+	postorderTraverseBT(bt->left);
+	postorderTraverseBT(bt->right);
+	printf("%d ",bt->data);
 }
