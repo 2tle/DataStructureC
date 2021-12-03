@@ -15,9 +15,9 @@ int sendMenu() {
 	printf("| 7.이진트리 후위순회 출력             나머지. 종료  |\n ");
 	printf("===================================================\n");
 	printf("| 번호를 선택하세요(나머지는 종료) >");
-	int tmp;
-	scanf("%d",&tmp);
-	return tmp;
+	int m;
+	scanf("%d",&m);
+	return m;
 }
 
 void initDBLL() {
