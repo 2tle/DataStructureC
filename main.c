@@ -6,7 +6,7 @@ BTreeNode* mainTree;
 BTData bdata;
 ListData data;
 
-void sendMenu() {
+int sendMenu() {
 	printf("===================================================\n");
 	printf("|         C언어 프로그래밍 자료구조 구현             |\n");
 	printf("| 1.양방향 연결리스트 생성 2.양방향 연결리스트 값추가|\n");
@@ -15,6 +15,9 @@ void sendMenu() {
 	printf("| 7.이진트리 후위순회 출력             나머지. 종료  |\n ");
 	printf("===================================================\n");
 	printf("| 번호를 선택하세요(나머지는 종료) >");
+	int tmp;
+	scanf("%d",&tmp);
+	return tmp;
 }
 
 void initDBLL() {
@@ -97,8 +100,8 @@ int main(void) {
 	int menu;
 	int whileVar = TRUE;
 	while(whileVar) {
-		sendMenu();
-		scanf("%d",&menu);
+		menu = sendMenu();
+
 		switch(menu) {
 			case 1:
 				initDBLL();
